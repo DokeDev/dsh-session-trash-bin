@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session trash bin",
+    "description": "Deleting a session moves it into a recoverable trash: the sidebar row disappears at once, and Session trash lets you restore it, permanently delete one entry, or empty everything. Works for the conversation currently open too, without a page reload."
+  }
+}

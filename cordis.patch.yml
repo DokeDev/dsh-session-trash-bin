@@ -1,0 +1,6 @@
+# Bundle patch for the session trash bin.
+# The id and name must stay on their own lines; the package name must match
+# package.json exactly, because it is also the browser module id.
+- insert:
+    - id: dsh-session-trash-bin
+      name: 'dsh-session-trash-bin'

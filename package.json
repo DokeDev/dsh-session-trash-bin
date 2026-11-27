@@ -1,0 +1,78 @@
+{
+  "name": "dsh-session-trash-bin",
+  "version": "0.2.0",
+  "description": "A session trash bin for DeepSeek Harness: deleting a session moves it into a recoverable trash, where it can be restored, permanently deleted, or emptied. 会话垃圾箱：删除先移入可恢复的垃圾箱，支持恢复、彻底删除和清空垃圾箱。",
+  "icon": "icon.svg",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale/*.json",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node scripts/verify.mjs && node --test \"tests/*.test.mjs\"",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "prepublishOnly": "node scripts/verify.mjs && node --test \"tests/*.test.mjs\""
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "cordis",
+    "plugin",
+    "session",
+    "session-management",
+    "trash-bin",
+    "trash",
+    "restore",
+    "delete",
+    "会话垃圾箱"
+  ],
+  "license": "MIT",
+  "author": "DokeDev",
+  "homepage": "https://github.com/DokeDev/dsh-session-trash-bin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DokeDev/dsh-session-trash-bin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DokeDev/dsh-session-trash-bin/issues"
+  },
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.2.1-alpha.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-context-menu",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  },
+  "contributors": [
+    "TuWeiZhi (original dsh-session-delete)"
+  ]
+}
