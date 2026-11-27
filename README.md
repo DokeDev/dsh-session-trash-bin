@@ -1,5 +1,7 @@
 # Session trash bin
 
+[English](README.md) | [简体中文](README.zh.md)
+
 [![CI](https://github.com/DokeDev/dsh-session-trash-bin/actions/workflows/ci.yml/badge.svg)](https://github.com/DokeDev/dsh-session-trash-bin/actions/workflows/ci.yml)
 
 [github.com/DokeDev/dsh-session-trash-bin](https://github.com/DokeDev/dsh-session-trash-bin)

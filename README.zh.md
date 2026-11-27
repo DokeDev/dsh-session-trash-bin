@@ -1,5 +1,7 @@
 # 会话垃圾箱
 
+[English](README.md) | [简体中文](README.zh.md)
+
 [github.com/DokeDev/dsh-session-trash-bin](https://github.com/DokeDev/dsh-session-trash-bin)
 
 给 DeepSeek Harness 加一个会话垃圾箱：删除会话不再直接粉碎，而是先把会话目录移入
